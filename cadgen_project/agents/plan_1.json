@@ -1,0 +1,22 @@
+{
+  "title": "Simple Rectangular Box",
+  "description": "Create a rectangular box with dimensions 100mm x 50mm x 20mm",
+  "steps": [
+    {
+      "step_number": 1,
+      "action": "create_base",
+      "geometry_type": "box",
+      "parameters": {
+        "length": 100,
+        "width": 50,
+        "height": 20
+      },
+      "dependencies": [],
+      "description": "Create the base platform"
+    }
+  ],
+  "estimated_complexity": "Simple",
+  "materials_needed": [
+    "Aluminum"
+  ]
+}

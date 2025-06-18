@@ -1,0 +1,129 @@
+# =================================================================
+# CORE REQUIREMENTS - Install these first
+# =================================================================
+
+# Core Python libraries
+numpy>=1.24.0
+pandas>=2.0.0
+pydantic>=2.4.0
+python-dotenv>=1.0.0
+
+# Web Scraping & Data Collection
+selenium>=4.15.0
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+webdriver-manager>=4.0.0
+lxml>=4.9.0
+
+# LangChain Framework
+langchain>=0.1.0
+langchain-groq>=0.1.0
+langchain-community>=0.0.20
+langchain-text-splitters>=0.0.1
+
+# Vector Database & RAG
+chromadb>=0.4.0
+sentence-transformers>=2.2.0
+tiktoken>=0.5.0
+
+# LLM & API Integration
+groq>=0.4.0
+httpx>=0.25.0
+
+# CAD & 3D Processing
+cadquery>=2.4.0,<2.6.0
+cadquery-ocp>=7.7.0,<7.8.0
+matplotlib>=3.7.0
+
+# Streamlit UI Framework
+streamlit>=1.28.0
+streamlit-ace>=0.1.1
+plotly>=5.15.0
+
+# Logging & Monitoring
+loguru>=0.7.0
+rich>=13.0.0
+tqdm>=4.66.0
+
+# File Processing & Utilities
+PyYAML>=6.0.1
+jsonschema>=4.19.0
+typing-extensions>=4.8.0
+
+# Platform-specific dependencies
+pywin32>=306; sys_platform == "win32"
+
+# =================================================================
+# DEVELOPMENT DEPENDENCIES - Install for development
+# =================================================================
+
+# Testing Framework
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-mock>=3.11.0
+
+# Code Quality & Formatting
+black>=23.9.0
+flake8>=6.1.0
+isort>=5.12.0
+
+# Development & Debugging
+ipython>=8.15.0
+
+# Additional Utilities
+click>=8.1.0
+colorama>=0.4.6
+
+# =================================================================
+# EXTENDED DEPENDENCIES - Install when implementing specific features
+# =================================================================
+
+# 3D Visualization (install when building 3D viewer)
+trimesh>=3.23.0
+pyvista>=0.42.0
+stpyvista>=0.1.0
+vtk>=9.2.0
+
+# Additional CAD Processing (install if needed)
+pythonnet>=3.0.0
+
+
+# Extended Streamlit Components (install as needed)
+streamlit-option-menu>=0.3.6
+streamlit-aggrid>=0.3.4
+
+# Database Support (install if using databases)
+sqlalchemy>=2.0.0
+pymongo>=4.5.0
+
+# Image Processing (install if processing images from docs)
+Pillow>=10.0.0
+opencv-python>=4.8.0
+
+# Advanced Vector Databases (install for production)
+faiss-cpu>=1.7.4
+pinecone-client>=2.2.0
+weaviate-client>=3.24.0
+
+# GPU Acceleration (install only if running local LLMs)
+# torch>=2.0.0
+# torchvision>=0.15.0
+# transformers>=4.30.0
+
+# Additional API Support (install if using other LLM providers)
+# openai>=1.0.0
+# anthropic>=0.8.0
+
+# Security & Advanced Features (install for production)
+# cryptography>=41.0.0
+# keyring>=24.2.0
+# aiofiles>=23.2.0
+
+# Extended Development Tools (install for team development)
+jupyter>=1.0.0
+mypy>=1.5.0
+pytest-cov>=4.1.0
+pre-commit>=3.4.0
+bandit>=1.7.5
+
+

@@ -1,0 +1,25 @@
+{
+  "title": "Generated CAD Model",
+  "description": "Pseudocode generated from CAD plan",
+  "imports_needed": [
+    "cadquery as cq"
+  ],
+  "global_variables": {
+    "tolerance": "float"
+  },
+  "initialization": "CREATE workplane on XY plane\nSET tolerance = 0.01",
+  "main_blocks": [
+    {
+      "step_number": 1,
+      "operation_type": "create_geometry",
+      "pseudocode": "CREATE basic geometry from plan specifications",
+      "variables_used": [
+        "result"
+      ],
+      "dependencies": [],
+      "comments": "Auto-generated pseudocode block"
+    }
+  ],
+  "finalization": "EXPORT model to file",
+  "estimated_lines": 20
+}
