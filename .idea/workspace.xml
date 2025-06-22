@@ -5,27 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a858059-83b5-4a1c-b13e-c19b0104b397" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/6month_Project_Autocad_Lang.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cadgen_project/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cadgen_project/agents/codegen_agent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cadgen_project/agents/planner_agent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cadgen_project/agents/pseudocode_agent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cadgen_project/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cadgen_project/config/llm_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cadgen_project/config/rag_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cadgen_project/config/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cadgen_project/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cadgen_project/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cadgen_project/utils/error_handling.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cadgen_project/utils/file_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cadgen_project/utils/logging_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cadgen_project/utils/validation_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadgen_project/agents/codegen_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadgen_project/agents/codegen_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadgen_project/agents/plan_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadgen_project/agents/plan_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadgen_project/agents/plan_2_pseudocode.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadgen_project/agents/planner_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadgen_project/agents/planner_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadgen_project/agents/pseudocode_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadgen_project/agents/pseudocode_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadgen_project/config/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadgen_project/config/llm_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadgen_project/config/rag_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadgen_project/config/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadgen_project/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadgen_project/utils/error_handling.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadgen_project/utils/file_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadgen_project/utils/logging_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadgen_project/utils/validation_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +39,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {}
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Inevitable-Reaper/Cadgen.git",
+    "accountId": "39371ee3-6a62-4ced-80f6-85a31bba4216"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -64,6 +70,11 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yashd\PycharmProjects\PythonProject1\cadgen_project\agents" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -87,7 +98,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

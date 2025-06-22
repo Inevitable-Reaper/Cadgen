@@ -1,0 +1,180 @@
+{
+  "plan_id": "spur_gear_001",
+  "title": "Spur Gear Modeling Plan",
+  "description": "CADQuery plan for creating a spur gear with 24 teeth, 60mm pitch diameter, and a 5mm bore.",
+  "manufacturing_process": "3d_printing",
+  "material": null,
+  "dimensions": {
+    "length": 60.0,
+    "width": 60.0,
+    "height": 8.0
+  },
+  "tolerance": 0.1,
+  "steps": [
+    {
+      "step_number": 1,
+      "phase": "workplane_setup",
+      "operation": {
+        "operation_type": "geometry",
+        "method_name": "Workplane",
+        "parameters": {},
+        "constraints": null,
+        "workplane": "XY",
+        "axis_reference": null
+      },
+      "dependencies": [],
+      "description": "Establish the base workplane for the gear.",
+      "manufacturing_notes": null,
+      "geometry_notes": "Sets the XY plane as the primary workplane at the origin."
+    },
+    {
+      "step_number": 2,
+      "phase": "sketch",
+      "operation": {
+        "operation_type": "geometry",
+        "method_name": "sketch",
+        "parameters": {},
+        "constraints": null,
+        "workplane": "XY",
+        "axis_reference": null
+      },
+      "dependencies": [
+        1
+      ],
+      "description": "Start a sketch for the gear's base circle.",
+      "manufacturing_notes": null,
+      "geometry_notes": "Initiates a 2D sketch on the XY plane."
+    },
+    {
+      "step_number": 3,
+      "phase": "sketch",
+      "operation": {
+        "operation_type": "geometry",
+        "method_name": "circle",
+        "parameters": {
+          "radius": 30
+        },
+        "constraints": null,
+        "workplane": "XY",
+        "axis_reference": null
+      },
+      "dependencies": [
+        2
+      ],
+      "description": "Create the base circle representing the pitch diameter.",
+      "manufacturing_notes": null,
+      "geometry_notes": "Draws a circle with a radius of 30mm (pitch radius)."
+    },
+    {
+      "step_number": 4,
+      "phase": "sketch",
+      "operation": {
+        "operation_type": "geometry",
+        "method_name": "circle",
+        "parameters": {
+          "radius": 2.5
+        },
+        "constraints": null,
+        "workplane": "XY",
+        "axis_reference": null
+      },
+      "dependencies": [
+        2
+      ],
+      "description": "Create the bore hole sketch.",
+      "manufacturing_notes": null,
+      "geometry_notes": "Draws a circle with a radius of 2.5mm for the bore hole."
+    },
+    {
+      "step_number": 5,
+      "phase": "extrude",
+      "operation": {
+        "operation_type": "geometry",
+        "method_name": "extrude",
+        "parameters": {
+          "distance": 8
+        },
+        "constraints": null,
+        "workplane": "XY",
+        "axis_reference": "Z"
+      },
+      "dependencies": [
+        3,
+        4
+      ],
+      "description": "Extrude the gear profile to create the gear body.",
+      "manufacturing_notes": null,
+      "geometry_notes": "Extrudes the sketched circles along the Z-axis to a height of 8mm."
+    },
+    {
+      "step_number": 6,
+      "phase": "feature",
+      "operation": {
+        "operation_type": "geometry",
+        "method_name": "faces",
+        "parameters": {
+          "selector": ">Z or <Z"
+        },
+        "constraints": null,
+        "workplane": "XY",
+        "axis_reference": null
+      },
+      "dependencies": [
+        5
+      ],
+      "description": "Select the top and bottom faces of the gear.",
+      "manufacturing_notes": null,
+      "geometry_notes": "Selects the faces on the positive and negative Z axes."
+    },
+    {
+      "step_number": 7,
+      "phase": "feature",
+      "operation": {
+        "operation_type": "geometry",
+        "method_name": "edges",
+        "parameters": {
+          "selector": "%CIRCLE"
+        },
+        "constraints": null,
+        "workplane": "XY",
+        "axis_reference": null
+      },
+      "dependencies": [
+        5
+      ],
+      "description": "Select the outer edges of the gear.",
+      "manufacturing_notes": null,
+      "geometry_notes": "Selects the circular edges on the top and bottom faces."
+    },
+    {
+      "step_number": 8,
+      "phase": "finishing",
+      "operation": {
+        "operation_type": "geometry",
+        "method_name": "fillet",
+        "parameters": {
+          "radius": 0.5
+        },
+        "constraints": null,
+        "workplane": "XY",
+        "axis_reference": null
+      },
+      "dependencies": [
+        6,
+        7
+      ],
+      "description": "Apply a fillet to the outer edges of the gear.",
+      "manufacturing_notes": null,
+      "geometry_notes": "Rounds the selected edges with a 0.5mm radius."
+    }
+  ],
+  "post_processing": [],
+  "estimated_complexity": "medium",
+  "complexity": null,
+  "metadata": {},
+  "created_at": "2025-06-22T18:47:26.601532",
+  "coordinate_system": {
+    "primary_axis": "Z",
+    "orientation": "The gear is oriented with its axis of rotation along the Z-axis. The XY plane is the base plane."
+  }
+}

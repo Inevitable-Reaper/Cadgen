@@ -1,0 +1,107 @@
+{
+  "plan_id": "spur_gear_001",
+  "title": "Spur Gear Design",
+  "description": "Detailed CAD plan for creating a spur gear with 24 teeth, a pitch diameter of 60mm, and a 5mm bore hole, suitable for 3D printing or CNC milling.",
+  "imports": [
+    "cadquery as cq"
+  ],
+  "constants": {
+    "pitch_diameter": 60.0,
+    "gear_thickness": 8.0,
+    "bore_radius": 2.5,
+    "number_of_teeth": 24,
+    "module": 2.5,
+    "pressure_angle": 20,
+    "chamfer_radius": 0.5,
+    "pitch_circle_radius": 30
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "operation": "sketch",
+      "target": "result",
+      "method": "circle",
+      "parameters": {
+        "radius": 30
+      },
+      "comment": "Create a circular sketch representing the pitch circle of the gear.",
+      "dependencies": []
+    },
+    {
+      "step_number": 2,
+      "operation": "extrude",
+      "target": "result",
+      "method": "extrude",
+      "parameters": {
+        "distance": 8
+      },
+      "comment": "Extrude the pitch circle sketch to create the gear blank with a face width of 8mm.",
+      "dependencies": [
+        1
+      ]
+    },
+    {
+      "step_number": 3,
+      "operation": "sketch",
+      "target": "bore_circle",
+      "method": "circle",
+      "parameters": {
+        "radius": 2.5
+      },
+      "comment": "Create a circular sketch for the bore hole at the center of the gear.",
+      "dependencies": []
+    },
+    {
+      "step_number": 4,
+      "operation": "cut",
+      "target": "result",
+      "method": "cut",
+      "parameters": {},
+      "comment": "Cut the bore hole through the gear blank.",
+      "dependencies": [
+        2,
+        3
+      ]
+    },
+    {
+      "step_number": 5,
+      "operation": "modify",
+      "target": "gear_profile",
+      "method": "involuteGear",
+      "parameters": {
+        "number_of_teeth": 24,
+        "module": 2.5,
+        "pressure_angle": 20
+      },
+      "comment": "Create the involute gear profile using the specified parameters. Module is calculated as pitch diameter / number of teeth (60/24 = 2.5).",
+      "dependencies": [
+        2
+      ]
+    },
+    {
+      "step_number": 6,
+      "operation": "cut",
+      "target": "result",
+      "method": "cut",
+      "parameters": {},
+      "comment": "Cut the gear teeth into the gear blank using the generated involute profile.",
+      "dependencies": [
+        2,
+        5
+      ]
+    },
+    {
+      "step_number": 7,
+      "operation": "modify",
+      "target": "result",
+      "method": "fillet",
+      "parameters": {
+        "radius": 0.5
+      },
+      "comment": "Apply a 0.5mm chamfer to the outer edges of the gear to remove sharp edges.",
+      "dependencies": [
+        6
+      ]
+    }
+  ]
+}
