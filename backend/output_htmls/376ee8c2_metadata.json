@@ -1,0 +1,10 @@
+{
+  "id": "376ee8c2",
+  "name": "Model_376ee8c2",
+  "description": "Create a baseball bat 32 inches long with a grip handle",
+  "created_at": "2025-06-29T00:21:13.774265",
+  "generation_time": 14.612034797668457,
+  "vertex_count": 4524,
+  "html_path": "output_htmls\\cad_model_376ee8c2.html",
+  "stl_path": "outputs\\cad_model_376ee8c2.stl"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "089be7f6",
+  "name": "Model_089be7f6",
+  "description": "Design a hex bolt M8 x 25mm with proper threads",
+  "created_at": "2025-06-28T23:48:26.381257",
+  "generation_time": 16.255900621414185,
+  "vertex_count": 1572,
+  "html_path": "output_htmls\\cad_model_089be7f6.html",
+  "stl_path": "outputs\\cad_model_089be7f6.stl"
+}

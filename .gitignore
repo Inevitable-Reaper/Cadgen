@@ -61,3 +61,6 @@ htmlcov/
 
 # Archives (keep in repo for reference)
 # archive/
+
+frontend/node_modules/
+frontend/dist/

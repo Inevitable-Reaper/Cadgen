@@ -1,0 +1,10 @@
+{
+  "id": "00d1173b",
+  "name": "Model_00d1173b",
+  "description": "Build an L-bracket 60x40x5mm with mounting holes",
+  "created_at": "2025-06-29T00:27:22.646192",
+  "generation_time": 18.69367742538452,
+  "vertex_count": 72,
+  "html_path": "output_htmls\\cad_model_00d1173b.html",
+  "stl_path": "outputs\\cad_model_00d1173b.stl"
+}

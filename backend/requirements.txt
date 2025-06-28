@@ -1,0 +1,30 @@
+# AI-Powered CAD Generator - College Project Requirements
+
+# Core Dependencies
+cadquery>=2.4.0
+plotly>=5.17.0
+numpy>=1.24.0
+
+# FastAPI Backend
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-multipart>=0.0.6
+
+# AI Framework
+crewai>=0.28.0
+crewai-tools>=0.1.6
+google-generativeai>=0.3.2
+
+# Data Validation & Models
+pydantic>=2.5.0
+
+# Utilities
+python-dotenv>=1.0.0
+rich>=13.7.0
+
+# Optional: Streamlit (for legacy support)
+streamlit>=1.28.0
+
+# Python Standard Library (already included):
+# os, time, json, datetime, tempfile, traceback, typing
+# threading, signal, re, pathlib, math
